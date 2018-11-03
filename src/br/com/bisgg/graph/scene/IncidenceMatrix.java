@@ -2,13 +2,6 @@ package br.com.bisgg.graph.scene;
 
 import java.util.ArrayList;
 
-/*
-*
-* Classe responsável por gerar a matriz de incidência
-*
-* OBS: Comentários do métodos estão na interface principal
-*
-* */
 public class IncidenceMatrix implements GraphSceneInterface {
 
     private int nodes;

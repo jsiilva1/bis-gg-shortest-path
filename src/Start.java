@@ -29,7 +29,7 @@ public class Start {
 
         while (true) {
 
-            System.out.println("\nDigite uma opção correspondente de menu acima: ");
+            System.out.println("Digite sua origem: (valor numérico entre 1-"+graph.getNodes()+")");
             opcao = in.nextInt();
 
             switch (opcao) {
