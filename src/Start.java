@@ -1,3 +1,4 @@
+import br.com.bisgg.algorithm.FloydWarshall;
 import br.com.bisgg.graph.Graph;
 import br.com.bisgg.graph.scene.IncidenceMatrix;
 import br.com.bisgg.util.Helpers;
@@ -21,12 +22,12 @@ public class Start {
         Graph graph = new Graph(graphFileName);
         List<String> rowsInEdges = graph.getEdgesFromFile(); // obtem a lista de arestas do grafo
 
-        Scanner in = new Scanner(System.in);
+        IncidenceMatrix incidenceMatrix = new IncidenceMatrix(graph.getNodes(), graph.getEdges());
 
-        // Exibição do menu principal
-        Helpers.screenHomeStart();
-        System.out.println("(Digite somente valores numéricos entre 1-"+graph.getNodes()+")");
-        System.out.println("---------------------------------------------------------------\n");
+        System.out.println("Dados extraídos com base no Algoritmo de Floyd a partir da entrada passada: ");
+        System.out.println("==================================================================================");
 
+        // Executa o método de Floyd
+        FloydWarshall floyd = new FloydWarshall(graph, graph.getNodes());
     }
 }
