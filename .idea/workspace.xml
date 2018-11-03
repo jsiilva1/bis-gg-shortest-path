@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53e0c945-4eb2-4fc0-a1e8-d5618ab5226c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/graph_data_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/graph_data_1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/graph_data_2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/graph_data_3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/graph_data_test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/graph_data_x_example" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/Relatório final de Resultados.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/Relatório final de Resultados.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Start.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/bisgg/graph/Eloquent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bisgg/graph/Eloquent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/bisgg/graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bisgg/graph/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/bisgg/graph/scene/AdjacencyList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/bisgg/graph/scene/AdjacencyMatrix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/bisgg/tests/AdjacencyMatrixTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/bisgg/tests/IncidenceMatrixTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bisgg/tests/IncidenceMatrixTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +20,8 @@
       <file leaf-file-name="Graph.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/com/bisgg/graph/Graph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+            <state relative-caret-position="1872">
+              <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#6022#6023#0" expanded="true" />
@@ -64,8 +49,8 @@
       <file leaf-file-name="IncidenceMatrixTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/br/com/bisgg/tests/IncidenceMatrixTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+            <state relative-caret-position="219">
+              <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,8 +82,8 @@
         <option value="$PROJECT_DIR$/src/Start.java" />
         <option value="$PROJECT_DIR$/data/Entrada1.txt" />
         <option value="$PROJECT_DIR$/src/br/com/bisgg/graph/Eloquent.java" />
-        <option value="$PROJECT_DIR$/src/br/com/bisgg/graph/Graph.java" />
         <option value="$PROJECT_DIR$/src/br/com/bisgg/tests/IncidenceMatrixTests.java" />
+        <option value="$PROJECT_DIR$/src/br/com/bisgg/graph/Graph.java" />
       </list>
     </option>
   </component>
@@ -250,12 +235,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541208707550</updated>
-      <workItem from="1541208710906" duration="1449000" />
+      <workItem from="1541208710906" duration="1807000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1449000" />
+    <option name="totallyTimeSpent" value="1807000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1360" height="768" extended-state="6" />
@@ -271,8 +256,8 @@
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32756132" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32756132" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32900432" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49892473" visible="true" weight="0.25" />
@@ -353,10 +338,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/graph_data_1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/bisgg/graph/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+        <state relative-caret-position="1872">
+          <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#6022#6023#0" expanded="true" />
@@ -371,17 +363,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/graph_data_1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/bisgg/tests/IncidenceMatrixTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        <state relative-caret-position="219">
+          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

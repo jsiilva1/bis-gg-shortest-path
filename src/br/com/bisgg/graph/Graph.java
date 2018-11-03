@@ -29,7 +29,7 @@ public class Graph {
       se há erros triviais nas ligações.
     *
     * */
-    public List<String> getEdgesFromFile () {
+    public List<String> getEdgesFromFile() {
 
         // Cria uma lista para armazenar e filtrar, mediante uma expressão Lambda, cada linha do arquivo
         List<String> rows;
