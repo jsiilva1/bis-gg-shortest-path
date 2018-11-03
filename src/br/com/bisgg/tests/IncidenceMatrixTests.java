@@ -17,16 +17,6 @@ public class IncidenceMatrixTests {
         IncidenceMatrix incidenceMatrix = new IncidenceMatrix(graph.getNodes(), graph.getEdges());
 
         // Executa o método de Floyd
-        //FloydWarshall floyd = new FloydWarshall(graph, graph.getNodes());
-
-
-
-        for (int i = 0; i < rowsInEdges.size(); i++) {
-            int from = Integer.parseInt(rowsInEdges.get(i).split(" ")[0]);
-            int to = Integer.parseInt(rowsInEdges.get(i).split(" ")[1]);
-            int weigth = Integer.parseInt(rowsInEdges.get(i).split(" ")[2]);
-
-            System.out.println(from+" => "+to+" : "+weigth+"M");
-        }
+        FloydWarshall floyd = new FloydWarshall(graph, graph.getNodes());
     }
 }

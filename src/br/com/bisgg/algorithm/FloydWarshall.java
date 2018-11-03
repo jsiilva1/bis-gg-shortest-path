@@ -27,6 +27,7 @@ public class FloydWarshall {
         for (double[] row : dist)
             Arrays.fill(row, Double.POSITIVE_INFINITY);
 
+        // Preenchendo a matriz de distancias com o valor de cada aresta vindo do grafo
         for (int i = 0; i < rowsInEdges.size(); i++) {
             int from = Integer.parseInt(rowsInEdges.get(i).split(" ")[0]);
             int to = Integer.parseInt(rowsInEdges.get(i).split(" ")[1]);
@@ -43,6 +44,10 @@ public class FloydWarshall {
                     next[i][j] = j + 1;
         }
 
+        /*
+        *
+        * Aqui está a cereja do bolo
+        * */
         for (int k = 0; k < this.numberOfNodes; k++)
             for (int i = 0; i < this.numberOfNodes; i++)
                 for (int j = 0; j < this.numberOfNodes; j++)

@@ -8,7 +8,5 @@ public class Helpers {
         System.out.println("Sistema Integrado Gerador de Grafos");
         System.out.println("===============================================================\n");
         System.out.println("Olá, prezado taxista, vamos iniciar uma nova corrida?");
-        System.out.println("---------------------------------------------------------------\n");
-
     }
 }

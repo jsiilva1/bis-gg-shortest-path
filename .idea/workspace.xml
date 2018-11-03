@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="53e0c945-4eb2-4fc0-a1e8-d5618ab5226c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Start.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/bisgg/graph/scene/IncidenceMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bisgg/graph/scene/IncidenceMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/bisgg/algorithm/FloydWarshall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bisgg/algorithm/FloydWarshall.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/bisgg/tests/IncidenceMatrixTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bisgg/tests/IncidenceMatrixTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/bisgg/util/Helpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bisgg/util/Helpers.java" afterDir="false" />
     </list>
@@ -40,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Start.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Start.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Start.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+            <state relative-caret-position="54">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,20 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Helpers.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/com/bisgg/util/Helpers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IncidenceMatrixTests.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="IncidenceMatrixTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/br/com/bisgg/tests/IncidenceMatrixTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="217">
+              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,8 +67,8 @@
       <file leaf-file-name="FloydWarshall.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/com/bisgg/algorithm/FloydWarshall.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="29" selection-start-line="29" selection-end-line="35" selection-end-column="9" />
+            <state relative-caret-position="144">
+              <caret line="62" column="48" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,11 +96,11 @@
         <option value="$PROJECT_DIR$/src/br/com/bisgg/graph/Graph.java" />
         <option value="$PROJECT_DIR$/data/graph_data_4" />
         <option value="$PROJECT_DIR$/data/graph_data_4.txt" />
-        <option value="$PROJECT_DIR$/src/br/com/bisgg/algorithm/FloydWarshall.java" />
         <option value="$PROJECT_DIR$/src/br/com/bisgg/graph/scene/IncidenceMatrix.java" />
-        <option value="$PROJECT_DIR$/src/br/com/bisgg/tests/IncidenceMatrixTests.java" />
         <option value="$PROJECT_DIR$/src/br/com/bisgg/util/Helpers.java" />
+        <option value="$PROJECT_DIR$/src/br/com/bisgg/algorithm/FloydWarshall.java" />
         <option value="$PROJECT_DIR$/src/Start.java" />
+        <option value="$PROJECT_DIR$/src/br/com/bisgg/tests/IncidenceMatrixTests.java" />
       </list>
     </option>
   </component>
@@ -164,7 +155,7 @@
               <item name="bis-gg-shortest-path" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="bisgg" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -192,7 +183,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Start">
+  <component name="RunManager" selected="Application.IncidenceMatrixTests">
     <configuration name="IncidenceMatrixTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.bisgg.tests.IncidenceMatrixTests" />
       <module name="bis-gg-shortest-path" />
@@ -256,8 +247,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Start" />
         <item itemvalue="Application.IncidenceMatrixTests" />
+        <item itemvalue="Application.Start" />
       </list>
     </recent_temporary>
   </component>
@@ -271,12 +262,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541208707550</updated>
-      <workItem from="1541208710906" duration="5223000" />
+      <workItem from="1541208710906" duration="6967000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5223000" />
+    <option name="totallyTimeSpent" value="6967000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1360" height="768" extended-state="6" />
@@ -292,7 +283,7 @@
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42712843" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46176046" />
       <window_info anchor="bottom" id="Terminal" weight="0.32900432" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
@@ -364,20 +355,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/graph_data_1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/graph_data_4.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/bisgg/graph/scene/IncidenceMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-342">
@@ -389,23 +366,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/bisgg/algorithm/FloydWarshall.java">
+    <entry file="file://$PROJECT_DIR$/data/graph_data_1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="29" selection-start-line="29" selection-end-line="35" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="18">
+          <caret line="1" column="1" lean-forward="true" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/bisgg/tests/IncidenceMatrixTests.java">
+    <entry file="file://$PROJECT_DIR$/data/graph_data_4.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="108">
+          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -429,15 +400,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/bisgg/util/Helpers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+        <state relative-caret-position="54">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/bisgg/algorithm/FloydWarshall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="62" column="48" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Start.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        <state relative-caret-position="54">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/bisgg/tests/IncidenceMatrixTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
