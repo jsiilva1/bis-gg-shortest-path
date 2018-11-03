@@ -5,6 +5,8 @@ import br.com.bisgg.graph.Graph;
 import java.util.Arrays;
 import java.util.List;
 
+import static java.lang.String.format;
+
 public class FloydWarshall {
 
     private Graph graph;
@@ -48,6 +50,29 @@ public class FloydWarshall {
                         dist[i][j] = dist[i][k] + dist[k][j];
                         next[i][j] = next[i][k];
                     }
+
+        printResult(dist, next);
     }
 
+    private static void printResult (double[][] dist, int[][] next) {
+        System.out.println("Arestas:\t Distancia:  \tMenor caminho:");
+
+        for (int i = 0; i < next.length; i++) {
+            for (int j = 0; j < next.length; j++) {
+                if (i != j) {
+                    int u = i + 1;
+                    int v = j + 1;
+
+                    String path = format("%d -> %d \t\t %2d \t\t\t %s", u, v,
+                            (int) dist[i][j], u);
+                    do {
+                        u = next[u - 1][v - 1];
+                        path += " -> " + u;
+                    } while (u != v);
+
+                    System.out.println(path);
+                }
+            }
+        }
+    }
 }
