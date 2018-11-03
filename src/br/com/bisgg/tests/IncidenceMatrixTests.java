@@ -1,5 +1,6 @@
 package br.com.bisgg.tests;
 
+import br.com.bisgg.algorithm.FloydWarshall;
 import br.com.bisgg.graph.Graph;
 import br.com.bisgg.graph.scene.IncidenceMatrix;
 
@@ -15,14 +16,9 @@ public class IncidenceMatrixTests {
 
         IncidenceMatrix incidenceMatrix = new IncidenceMatrix(graph.getNodes(), graph.getEdges());
 
-        // Fomentando a matriz com os dados do arquivo vindo da super classe Grafo
-        for (int i = 0; i < rowsInEdges.size(); i++) {
-            int from = Integer.parseInt(rowsInEdges.get(i).split(" ")[0]);
-            int to = Integer.parseInt(rowsInEdges.get(i).split(" ")[1]);
-            int weigth = Integer.parseInt(rowsInEdges.get(i).split(" ")[2]);
+        // Executa o método de Floyd
+        FloydWarshall floyd = new FloydWarshall(graph, graph.getNodes());
 
-            System.out.println(from +" => "+ to +" : "+weigth);
-        }
 
     }
 }

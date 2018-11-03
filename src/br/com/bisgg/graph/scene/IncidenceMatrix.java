@@ -99,6 +99,10 @@ public class IncidenceMatrix implements GraphSceneInterface {
         return this.matrixSize;
     }
 
+    public int[][] getMatrix () {
+        return this.matrix;
+    }
+
     public void show () {
         StringBuilder s = new StringBuilder();
         for (int i = 0; i < this.getMatrixSize(); i++) {

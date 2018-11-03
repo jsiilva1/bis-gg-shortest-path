@@ -51,7 +51,7 @@ public class Graph {
             * */
             rows = graph_data
                     .stream()
-                    .filter(line -> line.split(" ").length == 3 && !line.equals("-1 -1"))
+                    .filter(line -> line.split(" ").length == 3 && !line.equals("-1 -1 -1"))
                     .collect(Collectors.toList());
 
             int graphSize = rows.size();
