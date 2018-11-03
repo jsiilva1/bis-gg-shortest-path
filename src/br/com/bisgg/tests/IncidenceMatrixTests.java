@@ -11,21 +11,18 @@ public class IncidenceMatrixTests {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 
         Graph graph = new Graph("graph_data_1");
-        List<String> rowsInEdges = graph.createEdges();
+        List<String> rowsInEdges = graph.getEdgesFromFile();
 
         IncidenceMatrix incidenceMatrix = new IncidenceMatrix(graph.getNodes(), graph.getEdges());
 
         // Fomentando a matriz com os dados do arquivo vindo da super classe Grafo
         for (int i = 0; i < rowsInEdges.size(); i++) {
-            int a = Integer.parseInt(rowsInEdges.get(i).split(" ")[0]);
-            int b = Integer.parseInt(rowsInEdges.get(i).split(" ")[1]);
+            int from = Integer.parseInt(rowsInEdges.get(i).split(" ")[0]);
+            int to = Integer.parseInt(rowsInEdges.get(i).split(" ")[1]);
+            int weigth = Integer.parseInt(rowsInEdges.get(i).split(" ")[2]);
 
-            incidenceMatrix.set(a, b, 1);
-
-            if (incidenceMatrix.isAdjacent(a, b) && incidenceMatrix.isAdjacent(b, a))
-                incidenceMatrix.set(b, a, -1);
+            System.out.println(from +" => "+ to +" : "+weigth);
         }
 
-        incidenceMatrix.getNodeAdjacency(4);
     }
 }

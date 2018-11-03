@@ -17,7 +17,7 @@ public class Eloquent extends Persistencia {
     *
     * Método por retornar linha por linha do arquivo e entregar o formato cru para a classe principal Graph
     * */
-    protected LinkedList<String> readGraphFile () throws IOException, ClassNotFoundException {
+    protected LinkedList<String> readGraphFile () throws ClassNotFoundException {
 
         LinkedList<String> objects = new LinkedList<>();
 

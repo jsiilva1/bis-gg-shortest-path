@@ -28,34 +28,45 @@ public class Graph {
     * Método para criar a lógica das arestas vindo do arquivo, responsável por filtar ligações de origem e destino e identificar
       se há erros triviais nas ligações.
     *
-    *
     * */
-    public List<String> createEdges () throws IOException, ClassNotFoundException {
+    public List<String> getEdgesFromFile () {
 
-        // Instancia a classe intermediadora Eloquent para obter os dados, mesmo que ainda de forma crua, do arquivo do grafo;
-        Eloquent eloquent = new Eloquent(this.graphFile);
-        LinkedList<String> graph_data = eloquent.readGraphFile();
+        // Cria uma lista para armazenar e filtrar, mediante uma expressão Lambda, cada linha do arquivo
+        List<String> rows;
+        LinkedList<String> graph_data;
 
-        /*
-        *
-        * Cria uma lista para armazenar e filtar, mediante uma expressão Lambda, cada linha do arquivo
-          com uma regra de negócio onde cada linha deve ter, necessariamente, depois de ter seu espaço removido, tamanho igual a dois,
-          pois é ainda onde indica uma possibilida de existir uma aresta de entrada e saída; isso acontece enquanto a linha for -1 -1
-        * */
-        List<String> rows = graph_data.stream().filter(line -> line.split(" ").length == 2 && !line.equals("-1 -1")).collect(Collectors.toList());
-        int graphSize = rows.size();
+        try {
 
-        // Número de nós e arestas do grafo
-        int nodes = 0, edges = 0;
+            // Instancia a classe intermediadora Eloquent para obter os dados, mesmo que ainda de forma crua, do arquivo do grafo;
+            Eloquent eloquent = new Eloquent(this.graphFile);
+            graph_data = eloquent.readGraphFile();
 
-        int i = 0, j = 0;
-        int indexOfError = 0;
-        int lineOfError = 0;
+            /*
+            *
+            *
+              Regra de negócio onde cada linha deve ter, necessariamente, depois de ter seu espaço removido, tamanho igual a dois,
+              pois é ainda onde indica uma possibilida de existir uma aresta de entrada e saída; isso acontece enquanto a linha for -1 -1
+            *
+            *
+            * */
+            rows = graph_data
+                    .stream()
+                    .filter(line -> line.split(" ").length == 3 && !line.equals("-1 -1"))
+                    .collect(Collectors.toList());
 
-        // Inicializa uma variável de controle de erro. Começa com a hipótese de um grafo válido, caso valor false há erro nas especificações das arestas
-        boolean state = true;
+            int graphSize = rows.size();
 
-         /*
+            // Número de nós e arestas do grafo
+            int nodes = 0, edges = 0;
+
+            int i = 0, j = 0;
+            int indexOfError = 0;
+            int lineOfError = 0;
+
+            // Inicializa uma variável de controle de erro. Começa com a hipótese de um grafo válido, caso valor false há erro nas especificações das arestas
+            boolean state = true;
+
+            /*
             *
             * Verifica se o grafo contém o número de nós e arestas, respectivamente, na primeira e segunda linha do arquivo.
             *
@@ -64,16 +75,16 @@ public class Graph {
               igual a 2 significa que aquela informação tende a ser de uma adjacência (V, A) origem/destino;
             *
             *
-        * */
-        if (graph_data.get(0).isEmpty() || graph_data.get(0).split(" ").length >= 2) {
-            System.out.println("\bImpossível gerar o grafo.\nHá um erro nas especificações básicas de (V, A) na primeira linha do arquivo.");
-        } else {
+             * */
+            if (graph_data.get(0).isEmpty() || graph_data.get(0).split(" ").length >= 2) {
+                System.out.println("\bImpossível gerar o grafo.\nHá um erro nas especificações básicas de (V, A) na primeira linha do arquivo.");
+            } else {
 
-            // Obtém a quantidade de nós e arestas do grafo
-            nodes = Integer.parseInt(graph_data.get(0));
-            edges = graph_data.size() - 2;
+                // Obtém a quantidade de nós e arestas do grafo
+                nodes = Integer.parseInt(graph_data.get(0));
+                edges = graph_data.size() - 2;
 
-            while (i < graphSize) {
+                while (i < graphSize) {
 
                     /*
                      *
@@ -85,21 +96,25 @@ public class Graph {
                        esperada no tamanho da lista de GraphData deve ser do tamanho da lista de Rows, onde as mesmas foram filtradas;
                      *
                      * */
-                if (rows.size() < edges) {
-                    indexOfError = i - 1;
-                    lineOfError = i;
-                    state = false;
+                    if (rows.size() < edges) {
+                        indexOfError = i - 1;
+                        lineOfError = i;
+                        state = false;
+                    }
+                    i++;
                 }
-                i++;
             }
+
+            if (!state)
+                System.out.println("\bImpossível gerar o grafo.\nHá um erro na adjacência da posição " + indexOfError + " do arquivo.\n=> G(" + graph_data.get(lineOfError) + ", ?)");
+
+            // Seta a quantidade de nós e arestas do grafo
+            this.setNodes(nodes);
+            this.setEdges(edges);
+
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException("Exception in Classes: "+e);
         }
-
-        if (!state)
-            System.out.println("\bImpossível gerar o grafo.\nHá um erro na adjacência da posição " + indexOfError + " do arquivo.\n=> G(" + graph_data.get(lineOfError) + ", ?)");
-
-        // Seta a quantidade de nós e arestas do grafo
-        this.setNodes(nodes);
-        this.setEdges(edges);
 
         return rows;
     }

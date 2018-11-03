@@ -1,5 +1,4 @@
 import br.com.bisgg.graph.Graph;
-import br.com.bisgg.graph.scene.AdjacencyMatrix;
 import br.com.bisgg.graph.scene.IncidenceMatrix;
 import br.com.bisgg.util.Helpers;
 
@@ -13,14 +12,14 @@ public class Start {
     public static void main (String... args) throws ClassNotFoundException, IOException {
 
         // Instancia a classe mãe do sistema passando como parâmetro o arquivo que é pra ser gerado o grafo
-        new Start("graph_data_3");
+        new Start("graph_data_1");
     }
 
     public Start(String graphFileName) throws ClassNotFoundException, IOException {
 
         // Instancia a super classe Graph passando como parâmetro o arquivo que é pra ser gerado o grafo
         Graph graph = new Graph(graphFileName);
-        List<String> edgesInRows = graph.createEdges(); // obtem a lista de arestas do grafo
+        List<String> edgesInRows = graph.getEdgesFromFile(); // obtem a lista de arestas do grafo
 
         int opcao;
         Scanner in = new Scanner(System.in);
@@ -36,27 +35,6 @@ public class Start {
             switch (opcao) {
                 case 1:
 
-                    // Instanciando o teste da Matriz de Adjacência
-                    // Como parâmetro principal sendo o número de nós do arquivo corrente do grafo, advindo da classe Graph
-                    AdjacencyMatrix adjacencyMatrix = new AdjacencyMatrix(graph.getNodes());
-
-                    // Percorre todas as arestas e fomenta a matriz com os dados, vindo da super classe Graph
-                    for (int i = 0; i < edgesInRows.size(); i++) {
-                        int origin = Integer.parseInt(edgesInRows.get(i).split(" ")[0]);
-                        int destination = Integer.parseInt(edgesInRows.get(i).split(" ")[1]);
-
-                        // seta o estado de cada aresta conexa do grafo para 1. Padrão desconexo 0
-                        adjacencyMatrix.setState(origin, destination, 1);
-                    }
-
-                    System.out.println("\nGrafo gerado com sucesso!\n");
-
-                    System.out.println("Informações básicas:");
-                    System.out.println("- N° de vértices: "+graph.getNodes());
-                    System.out.println("- N° de arestas: "+graph.getEdges());
-                    System.out.println("===================================");
-
-                    adjacencyMatrix.getNodesAdjacenciesSimultaneously(35, 40);
 
                     break;
 
